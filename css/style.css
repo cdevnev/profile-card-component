@@ -9,6 +9,7 @@
     --DarkBlue: hsl(229, 23%, 23%);
     --DarkGray: hsl(227, 10%, 46%);
     --LightGray: hsl(0, 0%, 59%);
+    --FadedGray: hsla(0, 0%, 59%, .2);
 /* ## FONTS ## */
     --Bold700: 700 1.125rem/1 'Kumbh Sans', sans-serif;
     --Light400: 400 1.125rem/1 'Kumbh Sans', sans-serif;
@@ -88,7 +89,7 @@ body {
     display: inline-block;
     font: var(--Light400);
     color: var(--LightGray);
-    padding-left: .5em;
+    padding-left: .3em;
 }
 
 .location {
@@ -101,18 +102,17 @@ hr {
     height: 1px;
     width: 100%;
     border: 0;
-    background-color: var(--LightGray);
-    color: var(--LightGray);
-    border-color: var(--LightGray);
+    background-color: var(--FadedGray);
+    color: var(--FadedGray);
+    border-color: var(--FadedGray);
 
 }
 
 .stats {
-    margin: 0 auto;
     padding: 1em;
     display: flex;
-    justify-content: flex-start;
-    gap: 20%;
+    justify-content: center;
+    gap: 2em;
 }
 
 .stats h2 {
