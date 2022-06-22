@@ -12,7 +12,7 @@
 /* ## FONTS ## */
     --Bold700: 700 1.125rem/1 'Kumbh Sans', sans-serif;
     --Light400: 400 1.125rem/1 'Kumbh Sans', sans-serif;
-    --400sm: 400 1rem/1 'Kumbh Sans', sans-serif;
+    --400sm: 400 .9rem/1 'Kumbh Sans', sans-serif;
 }
 
 * {
@@ -57,7 +57,7 @@ body {
     min-height: 20.8em;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
     display: grid;
-    grid-template: 50% / 100%;
+    grid-template: 38% 1fr / 100%;
     place-items: center;
 }
 
@@ -70,20 +70,25 @@ body {
 
 .profile-pic {
     align-self: end;
+    transform: translate(0, 48%);
+    
 }
 
 .profile-text {
+    margin-top: 1em;
 }
 
 .name {
     display: inline-block;
-    font: var(--Bold700)
+    font: var(--Bold700);
+    line-height: 2.5;
 }
 
 .age {
     display: inline-block;
     font: var(--Light400);
     color: var(--LightGray);
+    padding-left: .5em;
 }
 
 .location {
@@ -92,7 +97,9 @@ body {
 }
 
 hr {
+    margin-top: -1em;
     height: 1px;
+    width: 100%;
     border: 0;
     background-color: var(--LightGray);
     color: var(--LightGray);
@@ -101,11 +108,11 @@ hr {
 }
 
 .stats {
-    /* margin: 1em; */
+    margin: 0 auto;
     padding: 1em;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-start;
+    gap: 20%;
 }
 
 .stats h2 {
@@ -113,6 +120,7 @@ hr {
 }
 
 .stats p {
-    font-size: .85rem;
+    font-size: .8rem;
     color: var(--LightGray);
+    padding: .5em;
 }
