@@ -48,15 +48,31 @@ body {
 
 .main {
     background-color: white;
-    min-width: 20em;
+    background-image: url('../images/bg-pattern-card.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 38%;
+    min-width: 18.5em;
     /* width: 30%; */
     border-radius: 1em;
+    min-height: 20.8em;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    display: grid;
+    grid-template: 50% / 100%;
+    place-items: center;
 }
 
 .profile {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-pic {
+    align-self: end;
+}
+
+.profile-text {
 }
 
 .name {
