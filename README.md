@@ -1,1 +1,7 @@
 # profile-card-component
+
+This project provided a couple of challenges, most notably scaling the svg backgound images and dealing with the positioning on elements within the main card.
+
+To deal with the card, I set it up as a grid and matched one area (the image) with the size of the card background, about ~40% of the card height. This allowed me to position the image precisely at the end of the backgound and transform it 50% of its height to center it right on the line where the background ends and the whitespace begins. The text and content below was a bit more finnicky to position and I'd like to find a better solution to this next time, but it turned out okay in this project, just a bit more work to adjust. 
+
+The bigger challenge was dealing with the two background images. Setting them both within the body background was simple enough, and setting the bg-size to 100vh allowed the images to scale correctly without stretching or deforming into oval shapes. Directly positioning them was trickier, and solutions like vw/vh/vmax/vmin werent working exactly how I wanted them. With some research I found you could set a left,right and bottom, top as 'baselines' for where the image began and use trailing vh/vw values to specify how far from those edges to position the image. This turned out to be the exact solution I needed for this project, but still took a bit of adjusting to figure out how it worked exactly. 
